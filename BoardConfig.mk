@@ -99,4 +99,8 @@ BOARD_HAS_NO_REAL_SDCARD := true
 # NFC
 BOARD_NFC_CHIPSET := nfc-nci
 
+# inherit from the proprietary version
+ifneq ($(QCPATH),)
+-include $(QCPATH)/common/msm8974/BoardConfigVendor.mk
+endif
 
