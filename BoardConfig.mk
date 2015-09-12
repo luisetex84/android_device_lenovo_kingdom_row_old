@@ -97,8 +97,4 @@ BOARD_HAS_NO_REAL_SDCARD := true
 # NFC
 BOARD_NFC_CHIPSET := nfc-nci
 
-# SELinux policies
-# qcom sepolicy
-include device/qcom/sepolicy/sepolicy.mk
-
 
