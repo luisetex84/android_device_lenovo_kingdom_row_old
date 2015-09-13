@@ -31,4 +31,10 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
 
+# Graphics
+PRODUCT_PACKAGES += \
+    copybit.msm8974 \
+    gralloc.msm8974 \
+    hwcomposer.msm8974 \
+    memtrack.msm8974
 
