@@ -38,3 +38,16 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8974 \
     memtrack.msm8974
 
+# call dalvik heap config
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+
+# call hwui memory config
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
+# call the proprietary setup
+$(call inherit-product-if-exists, vendor/lenovo/kingdom_row/kingdom_row-vendor.mk)
+
+ifneq ($(QCPATH),)
+$(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
+endif
+
