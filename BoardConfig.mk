@@ -104,3 +104,4 @@ ifneq ($(QCPATH),)
 -include $(QCPATH)/common/msm8974/BoardConfigVendor.mk
 endif
 
+-include vendor/lenovo/kingdom_row/BoardConfigVendor.mk
