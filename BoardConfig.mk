@@ -94,7 +94,7 @@ BOARD_FLASH_BLOCK_SIZE                  := 131072
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/recovery.fstab
-PRODUCT_COPY_FILES += device/lenovo/kingdom_row/rootdir/etc/recovery.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += $(DEVICE_FOLDER)/recovery.fstab:recovery/root/etc/twrp.fstab
 DEVICE_RESOLUTION := 1440x2560
 BOARD_HAS_NO_REAL_SDCARD := true
 
