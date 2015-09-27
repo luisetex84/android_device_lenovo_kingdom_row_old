@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_FOLDER := device/lenovo/kingdom_row
+
 BOARD_VENDOR := lenovo
 
 # Bootloader
@@ -91,7 +93,7 @@ BOARD_USERDATAEXTRAIMAGE_PARTITION_NAME := 64G
 BOARD_FLASH_BLOCK_SIZE                  := 131072
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lenovo/kingdom_row/rootdir/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/recovery.fstab
 PRODUCT_COPY_FILES += device/lenovo/kingdom_row/rootdir/etc/recovery.fstab:recovery/root/etc/twrp.fstab
 DEVICE_RESOLUTION := 1440x2560
 BOARD_HAS_NO_REAL_SDCARD := true
