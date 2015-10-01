@@ -34,7 +34,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
 # Kernel
-#BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/kingdom_row/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/kingdom_row/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
