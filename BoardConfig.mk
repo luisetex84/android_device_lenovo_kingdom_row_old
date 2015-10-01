@@ -100,6 +100,7 @@ BOARD_HAS_NO_REAL_SDCARD := true
 
 # TWRP build flags
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
 
 # NFC
 BOARD_NFC_CHIPSET := nfc-nci
