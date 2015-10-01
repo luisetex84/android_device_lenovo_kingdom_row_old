@@ -98,6 +98,9 @@ PRODUCT_COPY_FILES += $(DEVICE_FOLDER)/recovery.fstab:recovery/root/etc/twrp.fst
 DEVICE_RESOLUTION := 1440x2560
 BOARD_HAS_NO_REAL_SDCARD := true
 
+# TWRP build flags
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+
 # NFC
 BOARD_NFC_CHIPSET := nfc-nci
 
